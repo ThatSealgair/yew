@@ -339,7 +339,7 @@ pub mod prelude {
         create_portal, BaseComponent, Children, ChildrenWithProps, Classes, Component, Context,
         Html, HtmlResult, NodeRef, Properties, ToHtml,
     };
-    pub use crate::macros::{classes, html, html_nested, mdx};
+    pub use crate::macros::{classes, html, html_nested};
     pub use crate::suspense::Suspense;
     pub use crate::virtual_dom::AttrValue;
 }
