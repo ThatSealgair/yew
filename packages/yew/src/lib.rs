@@ -267,13 +267,13 @@ pub use yew_macro::html_nested;
 /// [`Properties`]: ./html/trait.Properties.html
 /// [Yew Docs]: https://yew.rs/concepts/components/properties
 pub use yew_macro::props;
+// pub use yew_macro::{include_mdx, mdx, mdx_style};
 
 /// This module contains macros which implements html! macro and JSX-like templates
 pub mod macros {
     pub use crate::{classes, html, html_nested, props};
 }
 
-pub use yew_macro::{include_mdx, mdx, mdx_style};
 pub mod callback;
 pub mod context;
 #[cfg(feature = "csr")]
@@ -339,7 +339,7 @@ pub mod prelude {
         create_portal, BaseComponent, Children, ChildrenWithProps, Classes, Component, Context,
         Html, HtmlResult, NodeRef, Properties, ToHtml,
     };
-    pub use crate::macros::{classes, html, html_nested};
+    pub use crate::macros::{classes, html, html_nested, mdx};
     pub use crate::suspense::Suspense;
     pub use crate::virtual_dom::AttrValue;
 }
