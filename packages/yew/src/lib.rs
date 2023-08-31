@@ -273,6 +273,7 @@ pub mod macros {
     pub use crate::{classes, html, html_nested, props};
 }
 
+pub use yew_macro::{include_mdx, mdx, mdx_style};
 pub mod callback;
 pub mod context;
 #[cfg(feature = "csr")]
